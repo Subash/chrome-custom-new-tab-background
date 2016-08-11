@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#65279;</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .background {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+      }
+
+      .picker-label {
+        position: fixed;
+        right: 0;
+        top: 0;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 110%;
+        opacity: .1;
+        transition: opacity .2s;
+      }
+
+      body:hover .picker-label {
+        opacity: 1;
+      }
+
+      .picker {
+        display: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <label class="picker-label">
+      <span title="Pick an Image">🗻</span>
+      <input type="file" class="picker" />
+    </label>
+    <script src="script.js"></script>
+  </body>
+</html>
