@@ -25,7 +25,7 @@ function init() {
   if(localStorage.backgroundData) {
     setBackground(localStorage.backgroundData);
   } else {
-    setBackground('default.jpg');
+    setBackground('default.png');
   }
 }
 
