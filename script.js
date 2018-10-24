@@ -7,7 +7,11 @@ function onFileSelect(e) {
   const file = e.target.files[0];
   const reader = new FileReader();
   reader.addEventListener('load', () => {
-    localStorage.backgroundData = reader.result;
+    try {
+      localStorage.backgroundData = reader.result;
+    } catch (err) {
+      alert('Image size must be smaller than 5MB');
+    }
     setBackground(localStorage.backgroundData);
   });
   reader.readAsDataURL(file);
