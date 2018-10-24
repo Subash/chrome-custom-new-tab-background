@@ -9,10 +9,10 @@ function onFileSelect(e) {
   reader.addEventListener('load', () => {
     try {
       localStorage.backgroundData = reader.result;
+      setBackground(localStorage.backgroundData);
     } catch (err) {
       alert('Image size must be smaller than 5MB');
     }
-    setBackground(localStorage.backgroundData);
   });
   reader.readAsDataURL(file);
 }
