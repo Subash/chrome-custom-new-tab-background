@@ -1,9 +1,13 @@
 {
-    "manifest_version": 2,
-    "name": "Custom New Tab Background",
-    "version": "1.0.4",
-    "description": "Set a custom new tab background or wallpaper. Just that, nothing else. Make sure the image is smaller than 5 MB",
-    "chrome_url_overrides": {
-        "newtab": "tab.html"
-    }
+  "manifest_version": 3,
+  "name": "Custom New Tab Background",
+  "version": "1.0.5",
+  "description": "Set a custom new tab background or wallpaper. Just that, nothing else. Make sure the image is smaller than 5 MB",
+  "permissions": [],
+  "action": {
+    "default_title": "Custom New Tab Background"
+  },
+  "chrome_url_overrides": {
+    "newtab": "tab.html"
+  }
 }
